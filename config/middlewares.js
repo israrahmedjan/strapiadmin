@@ -14,8 +14,6 @@ module.exports = [
             'blob:',
             'market-assets.strapi.io',
             'res.cloudinary.com',
-              'https://best-trust-c63ee18b56.nyc3.digitaloceanspaces.com',
-            '*.strapi.io',
             'media.strapiapp.com'  // Added this line
           ],
           'media-src': [
