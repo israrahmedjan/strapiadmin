@@ -8,14 +8,21 @@ module.exports = [
         useDefaults: true,
         directives: {
           'connect-src': ["'self'", 'https:'],
-          'img-src': ["'self'", 'data:', 'blob:', 'market-assets.strapi.io', 'res.cloudinary.com'],
+          'img-src': [
+            "'self'",
+            'data:',
+            'blob:',
+            'market-assets.strapi.io',
+            'res.cloudinary.com',
+            'https://best-trust-c63ee18b56.media.strapiapp.com' // Added this line
+          ],
           'media-src': [
             "'self'",
             'data:',
             'blob:',
             'market-assets.strapi.io',
             'res.cloudinary.com',
-           'https://best-trust-c63ee18b56.nyc3.digitaloceanspaces.com',
+            'https://best-trust-c63ee18b56.nyc3.digitaloceanspaces.com',
             '*.strapi.io'
           ],
           upgradeInsecureRequests: null,
