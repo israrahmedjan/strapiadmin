@@ -13,16 +13,16 @@ module.exports = [
             'data:',
             'blob:',
             'market-assets.strapi.io',
-            'res.cloudinary.com'
+            'res.cloudinary.com',
+              'https://best-trust-c63ee18b56.nyc3.digitaloceanspaces.com',
+            '*.strapi.io'
           ],
           'media-src': [
             "'self'",
             'data:',
             'blob:',
             'market-assets.strapi.io',
-            'res.cloudinary.com',
-            'https://best-trust-c63ee18b56.nyc3.digitaloceanspaces.com',
-            '*.strapi.io'
+            'res.cloudinary.com'
           ],
           upgradeInsecureRequests: null,
         },
