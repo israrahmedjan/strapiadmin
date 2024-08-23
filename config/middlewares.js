@@ -12,14 +12,12 @@ module.exports = [
             "'self'", 
             'data:', 
             'blob:', 
-            'market-assets.strapi.io', 
-            '*.res.cloudinary.com'
+            'res.cloudinary.com' // Only allow images from Cloudinary
           ],
           'media-src': [
             "'self'",
             'data:',
             'blob:',
-            'market-assets.strapi.io',
             'res.cloudinary.com',
           ],
           upgradeInsecureRequests: null,
