@@ -13,8 +13,7 @@ module.exports = [
             'data:',
             'blob:',
             'market-assets.strapi.io',
-            'res.cloudinary.com',
-            'https://best-trust-c63ee18b56.media.strapiapp.com' // Added this line
+            'res.cloudinary.com'
           ],
           'media-src': [
             "'self'",
