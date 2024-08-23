@@ -31,6 +31,3 @@ module.exports = [
   'strapi::favicon',
   'strapi::public',
 ];
-
-
-// git commit is working
