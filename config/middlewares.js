@@ -12,13 +12,15 @@ module.exports = [
             "'self'", 
             'data:', 
             'blob:', 
-            'res.cloudinary.com' // Only allow images from Cloudinary
+            'res.cloudinary.com', 
+            'https://best-trust-c63ee18b56.media.strapiapp.com' // Allow images from this domain
           ],
           'media-src': [
             "'self'",
             'data:',
             'blob:',
             'res.cloudinary.com',
+            'https://best-trust-c63ee18b56.media.strapiapp.com' // Allow media from this domain
           ],
           upgradeInsecureRequests: null,
         },
