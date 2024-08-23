@@ -15,6 +15,8 @@ module.exports = [
             'blob:',
             'market-assets.strapi.io',
             'res.cloudinary.com',
+             'https://best-trust-c63ee18b56.strapiapp.com',
+            '*.strapi.io'
           ],
           upgradeInsecureRequests: null,
         },
@@ -29,3 +31,6 @@ module.exports = [
   'strapi::favicon',
   'strapi::public',
 ];
+
+
+// git commit is working
