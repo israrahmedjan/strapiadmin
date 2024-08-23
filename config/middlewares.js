@@ -7,15 +7,15 @@ module.exports = [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          'default-src': ["'self'"], // Default policy to self
-          'connect-src': ["'self'", 'https:'],
+          'default-src': ["'self'"],
+          'connect-src': ["'self'", 'https:', 'https://api.cloudinary.com'], // Allow connections to Cloudinary API
           'img-src': [
             "'self'",
             'data:',
             'blob:',
             'market-assets.strapi.io',
-            'res.cloudinary.com',
-            'https://best-trust-c63ee18b56.media.strapiapp.com', // Full URL with HTTPS added here
+            'res.cloudinary.com', // Allow images from Cloudinary
+            'https://best-trust-c63ee18b56.media.strapiapp.com', // Allow images from Strapi media domain
             '*.strapi.io'
           ],
           'media-src': [
@@ -23,11 +23,9 @@ module.exports = [
             'data:',
             'blob:',
             'market-assets.strapi.io',
-            'res.cloudinary.com',
-            'https://best-trust-c63ee18b56.media.strapiapp.com' // Full URL with HTTPS added here
+            'res.cloudinary.com', // Allow media from Cloudinary
+            'https://best-trust-c63ee18b56.media.strapiapp.com' // Allow media from Strapi media domain
           ],
-          'script-src': ["'self'", "'unsafe-inline'", "'unsafe-eval'"], // Allow inline scripts, if needed
-          'style-src': ["'self'", "'unsafe-inline'"], // Allow inline styles, if needed
           upgradeInsecureRequests: null,
         },
       },
