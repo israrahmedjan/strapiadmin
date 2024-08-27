@@ -857,6 +857,7 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
       'manyToMany',
       'api::hospital.hospital'
     >;
+    slug: Attribute.UID<'api::category.category', 'Name'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

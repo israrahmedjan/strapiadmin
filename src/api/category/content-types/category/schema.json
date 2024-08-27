@@ -37,6 +37,10 @@
       "relation": "manyToMany",
       "target": "api::hospital.hospital",
       "inversedBy": "categories"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Name"
     }
   }
 }
